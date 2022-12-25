@@ -11,6 +11,8 @@
   "dependencies": {
     "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.10.5",
+    "@mantine/core": "^5.9.5",
+    "@mantine/hooks": "^5.9.5",
     "@next/font": "13.1.0",
     "@notionhq/client": "^2.2.3",
     "@prisma/client": "^4.8.0",
@@ -37,7 +39,8 @@
     "husky": "^8.0.2",
     "lint-staged": "^13.1.0",
     "prettier": "^2.8.1",
-    "prisma": "^4.8.0"
+    "prisma": "^4.8.0",
+    "ts-node": "^10.9.1"
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx}": [

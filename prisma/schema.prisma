@@ -24,6 +24,7 @@ model products {
   category_id Int
   contents String?
   createdAt DateTime @default(now())
+  price Int
 
   @@index([category_id])
 }
