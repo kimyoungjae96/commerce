@@ -1,9 +1,9 @@
 import { Pagination } from "@mantine/core"
 import { products } from "@prisma/client"
+import { CATEGORY_MAP, TAKE } from "constants/product"
 import Image from "next/image"
 import React, { useCallback, useEffect, useState } from "react"
 
-const TAKE = 9
 function Products() {
   const [activePage, setPage] = useState(1)
   const [total, setTotal] = useState(0)
@@ -53,7 +53,7 @@ function Products() {
                 </span>
               </div>
               <span className="text-zinc-400">
-                {product.category_id === 1 && "의류"}
+                {CATEGORY_MAP[product.category_id - 1]}
               </span>
             </div>
           )
